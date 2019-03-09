@@ -1,0 +1,14 @@
+<h1>Decimal to Roman</h1>
+<br/><br/><br/><br/><br/>
+
+<div>
+  <label>Decimal Number</label>
+  <input placeholder="decimal no" #dec (keyup) = "convertDec2Rom(dec.value)">
+</div>
+
+<div>
+    <label>Roman Number</label>
+    <input placeholder="roman no" [(ngModel)] = "teraNamRoman">
+  </div>
+
+  <div style ="color: crimson">{{errorMsg}}</div>
